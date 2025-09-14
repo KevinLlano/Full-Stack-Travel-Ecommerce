@@ -110,15 +110,17 @@ public class CustomerController {
     // DELETE customer
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteCustomer(@PathVariable Long id) {
-        return customerRepository.findById(id)
+        try {
+            return customerRepository.findById(id)
                 .map(customer -> {
                     customerRepository.delete(customer);
                     return ResponseEntity.ok().build();
                 })
                 .orElse(ResponseEntity.notFound().build());
-    }
-
-    // GET division by customer ID (existing endpoint)
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("Cannot delete customer: " + e.getMessage());
+        }
+    }    // GET division by customer ID (existing endpoint)
     @GetMapping("/{id}/division")
     public ResponseEntity<DivisionDto> getDivisionByCustomerId(@PathVariable Long id) {
         return customerRepository.findById(id)

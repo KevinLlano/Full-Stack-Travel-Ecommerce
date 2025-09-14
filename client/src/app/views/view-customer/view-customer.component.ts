@@ -39,4 +39,16 @@ export class ViewCustomerComponent implements OnInit {
         )
   }
 
+  deleteCustomer(id: number): void {
+    if (confirm('Are you sure you want to delete this customer?')) {
+      this.http.delete(`${this.customerUrl}/${id}`).subscribe({
+        next: () => {
+          // Refresh the list after deletion
+          this.getCustomers().subscribe(customers => this.customers = customers);
+        },
+        error: (err) => console.error('Delete failed', err)
+      });
+    }
+  }
+
 }

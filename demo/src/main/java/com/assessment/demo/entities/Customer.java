@@ -64,7 +64,8 @@ public class Customer {
     @JoinColumn(name = "division_id")
     private Division division;
 
-    @OneToMany(mappedBy = "customer", cascade={CascadeType.PERSIST, CascadeType.MERGE})
+    // Cascade ALL so deleting a customer removes dependent carts; orphanRemoval to remove any detached carts
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonIgnore
     private Set<Cart> carts;
 

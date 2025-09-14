@@ -5,6 +5,9 @@
       <button mat-button class="edit-customer" routerLink="/customer/{{customer.id}}">
         <a><mat-icon class="icon-display">visibility</mat-icon></a>
       </button>
+      <button mat-button color="warn" (click)="deleteCustomer(customer.id)">
+        <mat-icon>delete</mat-icon>
+      </button>
     </li>
   </ul>
   <button class="button-31" routerLink="/customer/new">
