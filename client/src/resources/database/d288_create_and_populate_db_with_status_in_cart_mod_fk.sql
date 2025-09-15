@@ -90,7 +90,7 @@ CREATE TABLE `carts`
     `customer_id`           bigint NOT NULL,
     PRIMARY KEY (`cart_id`),
     KEY ( `customer_id` ),
-    CONSTRAINT FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`)
+    CONSTRAINT FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
 
 DROP TABLE IF EXISTS `cart_items`;
@@ -105,8 +105,8 @@ CREATE TABLE `cart_items`
     PRIMARY KEY (`cart_item_id`),
     KEY ( `cart_id` ),
     KEY ( `vacation_id` ),
-    CONSTRAINT FOREIGN KEY (`vacation_id`) REFERENCES `vacations` (`vacation_id`),
-    CONSTRAINT FOREIGN KEY (`cart_id`) REFERENCES `carts` (`cart_id`)
+    CONSTRAINT FOREIGN KEY (`vacation_id`) REFERENCES `vacations` (`vacation_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT FOREIGN KEY (`cart_id`) REFERENCES `carts` (`cart_id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
 
 DROP TABLE IF EXISTS `excursion_cartitem`;
@@ -119,8 +119,8 @@ CREATE TABLE `excursion_cartitem`
     KEY ( `excursion_id` ),
 --     CONSTRAINT FOREIGN KEY (`excursion_id`) REFERENCES `cart_items` (`cart_item_id`),
 --     CONSTRAINT FOREIGN KEY (`cart_item_id`) REFERENCES `excursions` (`excursion_id`)
-    CONSTRAINT FOREIGN KEY ( `cart_item_id` ) REFERENCES `cart_items` ( `cart_item_id` ),
-    CONSTRAINT FOREIGN KEY ( `excursion_id` ) REFERENCES `excursions` ( `excursion_id` )
+    CONSTRAINT FOREIGN KEY ( `cart_item_id` ) REFERENCES `cart_items` ( `cart_item_id` ) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT FOREIGN KEY ( `excursion_id` ) REFERENCES `excursions` ( `excursion_id` ) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci;
 
 INSERT INTO countries
