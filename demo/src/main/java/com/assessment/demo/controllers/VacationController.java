@@ -34,8 +34,6 @@ public class VacationController {
         response.put("_embedded", embedded);
 
         HttpHeaders headers = new HttpHeaders();
-        headers.add("Access-Control-Allow-Origin", "*");
-        headers.add("Access-Control-Allow-Headers", "*");
 
         return ResponseEntity.ok().headers(headers).contentType(MediaType.APPLICATION_JSON).body(response);
     }

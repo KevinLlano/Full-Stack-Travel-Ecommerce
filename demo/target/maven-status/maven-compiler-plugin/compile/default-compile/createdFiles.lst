@@ -1,6 +1,7 @@
 com\assessment\demo\controllers\CheckoutController.class
 com\assessment\demo\dao\CustomerRepository.class
 com\assessment\demo\Bootstrap.class
+com\assessment\demo\controllers\CustomerController$CustomerDTO.class
 com\assessment\demo\controllers\CountryController.class
 com\assessment\demo\entities\Cart.class
 com\assessment\demo\controllers\CustomerController$DivisionDto.class
@@ -19,10 +20,12 @@ com\assessment\demo\entities\Customer.class
 com\assessment\demo\services\PurchaseResponse.class
 com\assessment\demo\controllers\CustomerController.class
 com\assessment\demo\controllers\DivisionController.class
+com\assessment\demo\controllers\ExcursionController.class
 com\assessment\demo\dao\VacationRepository.class
 com\assessment\demo\dao\CartItemRepository.class
 com\assessment\demo\config\CorsConfig.class
 com\assessment\demo\config\RestDataConfig.class
+com\assessment\demo\controllers\VacationController.class
 com\assessment\demo\services\CheckoutService.class
 com\assessment\demo\entities\Division.class
 com\assessment\demo\entities\Excursion.class

@@ -7,17 +7,12 @@
     <list default="true" id="a0eb69f4-c689-4e0e-9bd7-9d22f8be0ec0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/config/RestDataConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/config/RestDataConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Division.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Excursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Excursion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/StatusType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/StatusType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Vacation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Vacation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/config/RestDataConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/config/RestDataConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController$CustomerDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController$CustomerDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController$DivisionDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController$DivisionDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/VacationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/VacationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/config/CorsConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
