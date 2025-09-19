@@ -2,8 +2,6 @@ package com.assessment.demo.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -12,8 +10,6 @@ import java.util.Date;
 import java.util.Objects;
 
 @Data
-@Getter
-@Setter
 @Entity
 @Table(name = "divisions")
 public class Division {
@@ -34,21 +30,16 @@ public class Division {
     @UpdateTimestamp
     private Date last_update;
 
-    //updated, don't change or else the divisions won't populate
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "country_id", nullable = false, insertable = false, updatable = false)
     @JsonIgnore
     private Country country;
-
-    public Division() {
-    }
 
     public Division(Long id, String division_name) {
         this.id = id;
         this.division_name = division_name;
     }
 
-    //updated, don't change or else the divisions won't populate
     @Column(name = "country_id")
     private long country_id;
     public void setCountry(Country country) {

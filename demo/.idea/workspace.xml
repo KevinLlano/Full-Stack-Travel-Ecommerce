@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0eb69f4-c689-4e0e-9bd7-9d22f8be0ec0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilotDiffState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/config/RestDataConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/config/RestDataConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Division.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Excursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Excursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/StatusType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/StatusType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Vacation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Vacation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/config/RestDataConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/config/RestDataConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController$CustomerDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController$CustomerDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController$DivisionDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController$DivisionDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,16 +49,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.DemoApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/Personal Java Projects/travelapp/demo&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Console Font&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DemoApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Projects/Personal Java Projects/travelapp/demo",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.assessment.demo.DemoApplication" />

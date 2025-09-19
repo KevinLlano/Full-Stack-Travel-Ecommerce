@@ -4,11 +4,7 @@ import jakarta.persistence.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Positive;
-import jakarta.validation.constraints.Size;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -18,8 +14,6 @@ import java.util.Objects;
 import java.util.Set;
 
 @Data
-@Getter
-@Setter
 @Entity
 @Table(name = "customers")
 public class Customer {
@@ -93,23 +87,6 @@ public class Customer {
             carts.add(cart);
             cart.setCustomer(this);
         }
-    }
-
-    // Add getter/setter methods with proper naming for field access
-    public String getCustomer_first_name() {
-        return firstName;
-    }
-
-    public void setCustomer_first_name(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getCustomer_last_name() {
-        return lastName;
-    }
-
-    public void setCustomer_last_name(String lastName) {
-        this.lastName = lastName;
     }
 
     @Override

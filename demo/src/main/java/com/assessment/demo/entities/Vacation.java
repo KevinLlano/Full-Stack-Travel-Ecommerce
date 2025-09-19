@@ -3,8 +3,6 @@ package com.assessment.demo.entities;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -12,8 +10,6 @@ import java.math.BigDecimal;
 import java.util.*;
 
 @Data
-@Getter
-@Setter
 @Entity
 @Table(name = "vacations")
 public class Vacation {

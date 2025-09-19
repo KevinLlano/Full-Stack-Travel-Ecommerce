@@ -14,15 +14,19 @@ public class RestDataConfig implements RepositoryRestConfigurer {
 
 
     @Override
-    public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
-        config.exposeIdsFor(Country.class);
-        config.exposeIdsFor(Customer.class);
-        config.exposeIdsFor(Division.class);
-        config.exposeIdsFor(Excursion.class);
-        config.exposeIdsFor(Vacation.class);
+    public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config,  CorsRegistry cors) {
+        // expose entity IDs
+        config.exposeIdsFor(
+        Country.class,
+        Customer.class,
+        Division.class,
+        Excursion.class,
+        Vacation.class
+        );
+
+        // configure CORS
         config.setDefaultPageSize(Integer.MAX_VALUE);
         config.setMaxPageSize(Integer.MAX_VALUE);
-
 
     }
 }
