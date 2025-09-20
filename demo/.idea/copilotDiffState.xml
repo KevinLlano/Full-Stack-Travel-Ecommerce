@@ -12,6 +12,24 @@
             </PendingDiffInfo>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/assessment/demo/dao/Purchase.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/main/java/com/assessment/demo/dao/Purchase.java" />
+              <option name="originalContent" value="package com.assessment.demo.dao;&#10;&#10;import com.assessment.demo.entities.Cart;&#10;import com.assessment.demo.entities.CartItem;&#10;import com.assessment.demo.entities.Customer;&#10;import lombok.Data;&#10;&#10;import java.util.Set;&#10;&#10;@Data&#10;public class Purchase {&#10;&#10;    private Customer customer;&#10;    private Cart cart;&#10;    private Set&lt;CartItem&gt; cartItems;&#10;}&#10;" />
+              <option name="updatedContent" value="package com.assessment.demo.dao;&#10;&#10;/**&#10; * Deprecated shim: Purchase DTO was moved to com.assessment.demo.dto.Purchase.&#10; * Keep this thin subclass for backwards compatibility; prefer the dto package.&#10; */&#10;@Deprecated&#10;public class Purchase extends com.assessment.demo.dto.Purchase {&#10;    // intentionally empty - subclassing the DTO to avoid breaking imports&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/assessment/demo/dao/PurchaseResponse.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/main/java/com/assessment/demo/dao/PurchaseResponse.java" />
+              <option name="originalContent" value="package com.assessment.demo.dto;&#10;&#10;import lombok.Data;&#10;&#10;@Data&#10;public class PurchaseResponse {&#10;&#10;    private final String orderTrackingNumber;&#10;}&#10;" />
+              <option name="updatedContent" value="package com.assessment.demo.dao;&#10;&#10;import lombok.Data;&#10;&#10;@Data&#10;public class PurchaseResponse {&#10;&#10;    private final String orderTrackingNumber;&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
