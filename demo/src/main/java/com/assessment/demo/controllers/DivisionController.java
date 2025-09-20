@@ -1,4 +1,3 @@
-
 package com.assessment.demo.controllers;
 
 import com.assessment.demo.dao.DivisionRepository;
@@ -8,11 +7,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/divisions")
 public class DivisionController {
@@ -25,13 +21,9 @@ public class DivisionController {
     }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String, Object>> getAllDivisions() {
+    public ResponseEntity<Object> getAllDivisions() {
         List<Division> divisions = divisionRepository.findAll();
-        Map<String, Object> response = new HashMap<>();
-        Map<String, Object> embedded = new HashMap<>();
-        embedded.put("divisions", divisions);
-        response.put("_embedded", embedded);
-        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(response);
+        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(ApiResponseHelper.wrapEmbedded("divisions", divisions));
     }
 
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)

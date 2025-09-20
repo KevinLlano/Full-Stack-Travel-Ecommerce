@@ -3,16 +3,12 @@ package com.assessment.demo.controllers;
 import com.assessment.demo.dao.VacationRepository;
 import com.assessment.demo.entities.Vacation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/vacations")
 public class VacationController {
@@ -26,16 +22,9 @@ public class VacationController {
 
     // GET all vacations with _embedded structure for frontend compatibility
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String, Object>> getAllVacations() {
+    public ResponseEntity<Object> getAllVacations() {
         List<Vacation> vacations = vacationRepository.findAll();
-        Map<String, Object> response = new HashMap<>();
-        Map<String, Object> embedded = new HashMap<>();
-        embedded.put("vacations", vacations);
-        response.put("_embedded", embedded);
-
-        HttpHeaders headers = new HttpHeaders();
-
-        return ResponseEntity.ok().headers(headers).contentType(MediaType.APPLICATION_JSON).body(response);
+        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(ApiResponseHelper.wrapEmbedded("vacations", vacations));
     }
 
     // GET single vacation by ID

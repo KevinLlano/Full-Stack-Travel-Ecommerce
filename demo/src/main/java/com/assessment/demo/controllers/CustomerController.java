@@ -1,4 +1,3 @@
-
 package com.assessment.demo.controllers;
 
 import com.assessment.demo.dao.CustomerRepository;
@@ -10,12 +9,10 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/customers")
 public class CustomerController {
@@ -31,13 +28,9 @@ public class CustomerController {
 
     // GET all customers with _embedded structure for frontend compatibility
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String, Object>> getAllCustomers() {
+    public ResponseEntity<Object> getAllCustomers() {
         List<Customer> customers = customerRepository.findAll();
-        Map<String, Object> response = new HashMap<>();
-        Map<String, Object> embedded = new HashMap<>();
-        embedded.put("customers", customers);
-        response.put("_embedded", embedded);
-        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(response);
+        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(ApiResponseHelper.wrapEmbedded("customers", customers));
     }
 
     // GET single customer by ID
@@ -137,7 +130,7 @@ public class CustomerController {
 
         // Handle both "/api/divisions/101" and "101" formats
         String[] parts = url.split("/");
-        String idStr = parts[parts.length - 1]; // Get the last part
+        String idStr = parts[parts.length - 1];
         return Long.parseLong(idStr);
     }
 
@@ -148,8 +141,8 @@ public class CustomerController {
         private String address;
         private String postal_code;
         private String phone;
-        private String division; // This will be a URL like "/api/divisions/101"
-        private String country;  // This will be a URL like "/api/countries/1"
+        private String division;
+        private String country;
 
         // Getters and setters
         public String getFirstName() { return firstName; }

@@ -7,11 +7,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/countries")
 public class CountryController {
@@ -24,13 +21,9 @@ public class CountryController {
     }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String, Object>> getAllCountries() {
+    public ResponseEntity<Object> getAllCountries() {
         List<Country> countries = countryRepository.findAll();
-        Map<String, Object> response = new HashMap<>();
-        Map<String, Object> embedded = new HashMap<>();
-        embedded.put("countries", countries);
-        response.put("_embedded", embedded);
-        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(response);
+        return ResponseEntity.ok().contentType(MediaType.APPLICATION_JSON).body(ApiResponseHelper.wrapEmbedded("countries", countries));
     }
 
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
