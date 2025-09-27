@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0eb69f4-c689-4e0e-9bd7-9d22f8be0ec0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../client/src/app/views/order-confirmation/order-confirmation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/views/order-confirmation/order-confirmation.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/CheckoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/CheckoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Division.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/StatusType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/StatusType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/Bootstrap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/DemoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/DemoApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/config/CorsConfig.class" afterDir="false" />
@@ -35,8 +35,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Excursion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Excursion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/StatusType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/StatusType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Vacation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Vacation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/services/CheckoutService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/services/CheckoutService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/services/CheckoutServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/services/CheckoutServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/assessment/demo/DemoApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/assessment/demo/DemoApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

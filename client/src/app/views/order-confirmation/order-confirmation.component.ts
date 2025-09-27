@@ -74,28 +74,63 @@ export class OrderConfirmationComponent implements OnInit {
   }
 
   checkout() {
+    if (!this.purchaseServiceDto) {
+      console.error('No purchaseServiceDto available');
+      return;
+    }
 
-    // Create simple purchase object with just IDs for backend lookup
-    const purchase = {
-      customerId: this.purchaseServiceDto.getCustomer().getId(),
-      cartId: this.purchaseServiceDto.getCart().getId()
+    // Build payload explicitly because class private fields won't serialize with Object.assign
+    const customer = this.purchaseServiceDto.getCustomer();
+    const cart = this.purchaseServiceDto.getCart();
+    const cartItems = this.purchaseServiceDto.getCartItems();
+
+    const payload = {
+      customer: {
+        id: customer.getId(),
+        firstName: customer.getFirstName(),
+        lastName: customer.getLastName(),
+        address: customer.getAddress(),
+        postal_code: customer.getPostalCode(),
+        phone: customer.getPhone()
+      },
+      cart: {
+        id: cart.getId(),
+        package_price: cart.getPackagePrice(),
+        party_size: cart.getPartySize(),
+        status: cart.getStatus(),
+        customer: { id: customer.getId() }
+      },
+      cartItems: cartItems.map((ci: any) => {
+        const vacation = ci.getVacation();
+        return {
+          vacation: {
+            id: vacation.getId(),
+            vacation_title: vacation.getVacationTitle(),
+            description: vacation.getDescription(),
+            travel_price: vacation.getTravelPrice(),
+            image_URL: vacation.getImageUrl()
+          },
+          excursions: ci.getExcursions().map((ex: any) => ({
+            id: ex.getId(),
+            excursion_title: ex.getExcursionTitle(),
+            excursion_price: ex.getExcursionPrice(),
+            image_URL: ex.getImageUrl()
+          }))
+        }
+      })
     };
 
-    console.log('Sending purchase data:', JSON.stringify(purchase, null, 2));
+    console.log('Checkout payload =>', payload);
 
-    // send request to back end
-    this.http.post<PurchaseApiResponse>(this.checkoutUrl, purchase).subscribe({
+    this.http.post<PurchaseApiResponse>(this.checkoutUrl, payload).subscribe({
       next: (response) => {
-        console.log('Purchase successful:', response);
         this.orderTrackingNumber = response.orderTrackingNumber;
+        console.log('Order tracking number:', this.orderTrackingNumber);
       },
-      error: (error) => {
-        console.error('Purchase failed:', error);
-        if (error.error && error.error.message) {
-          console.error('Error message:', error.error.message);
-        }
+      error: (err) => {
+        console.error('Checkout failed 400 payload sent:', payload);
+        console.error('Backend error:', err);
       }
     });
-
   }
 }

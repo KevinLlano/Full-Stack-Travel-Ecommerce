@@ -1,5 +1,22 @@
 # Angular Travel System
 
+## 🚀 Project Highlights
+- Modern travel booking app (Angular + Spring Boot)
+- Secure checkout with order tracking
+- Responsive UI (Angular Material)
+- RESTful backend, MySQL database
+- Docker-ready for cloud deployment
+
+## 🛠️ Tech Stack
+![Angular](https://img.shields.io/badge/Angular-14-red?logo=angular)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3-green?logo=springboot)
+![MySQL](https://img.shields.io/badge/MySQL-8-blue?logo=mysql)
+![Docker](https://img.shields.io/badge/Docker-ready-blue?logo=docker)
+
+## 📸 Screenshots
+<!-- Add your screenshots to the repo and update these paths -->
+![alt text](image-1.png)
+
 Full-stack travel shopping app. The frontend (Angular) lets users browse vacations and excursions, manage a cart, and place orders. The backend (Spring Boot + MySQL) exposes REST APIs, persists data, and enforces referential integrity with cascading deletes.
 
 ## Tech Stack
@@ -67,6 +84,8 @@ Key frontend details to replicate
 - Proxy setup for local dev: Angular `/api` → Spring Boot on port 8080
 - Safe deletes: DB-level ON DELETE CASCADE from customers → carts → cart_items → excursion_cartitem
 
+![alt text](image-3.png)
+
 ## APIs (examples)
 - `GET /api/customers` – list customers
 - `GET /api/customers/{id}` – get a customer
@@ -76,50 +95,20 @@ Key frontend details to replicate
 - `GET /api/vacations`, `GET /api/excursions` – browse data
 - `POST /api/checkout/purchase` – place an order
 
-## Run Locally (Windows)
-Prereqs: Node 18+, Java 21 (or compatible JDK), Maven, MySQL 8
-
-1) Start MySQL and create credentials
-- Create the DB user and schema or update `demo/src/main/resources/application.properties` to match your setup.
-
-2) Start the backend
+## ⚡ Quick Start
 ```bash
+# Backend
 cd demo
 mvn spring-boot:run
-```
-- Backend runs on `http://localhost:8080`
 
-3) Start the frontend with proxy
-```bash
+# Frontend
 cd ../client
 npm install
 ng serve --proxy-config proxy.conf.json
 ```
-- Frontend runs on `http://localhost:4200`
-- API calls to `/api/...` are proxied to the backend
-
-## Database Setup Options
-- Use existing local MySQL schema (recommended for dev). Ensure these FKs have cascades:
-  - `carts.customer_id` → customers.customer_id ON DELETE CASCADE
-  - `cart_items.cart_id` → carts.cart_id ON DELETE CASCADE
-  - `excursion_cartitem.cart_item_id` → cart_items.cart_item_id ON DELETE CASCADE
-- Or initialize from SQL scripts:
-  - Copy a schema file into `demo/src/main/resources/database/schema.sql`
-  - In `application.properties` set:
-    ```properties
-    spring.jpa.hibernate.ddl-auto=none
-    spring.sql.init.mode=always
-    spring.sql.init.schema-locations=classpath:database/schema.sql
-    ```
-  - Restart the backend; Spring Boot will run the script
-
-## Developer Tips
-- Angular environment: `client/src/environments/environment.ts`
-- Proxy: `client/proxy.conf.json` (already wired in `angular.json` dev serve)
-- Data models/DTOs: `client/src/app/model` and `client/src/app/model/dto`
-- Purchase data service (cart state): `client/src/app/services/purchase-data.service.ts`
-- Controllers (backend): `demo/src/main/java/com/assessment/demo/controllers`
-- Entities (backend): `demo/src/main/java/com/assessment/demo/entities`
+Backend: http://localhost:8080
+Frontend: http://localhost:4200
+API calls to `/api/...` are proxied to the backend
 
 ## Common Commands
 Frontend
@@ -137,5 +126,38 @@ mvn spring-boot:run
 mvn test
 ```
 
-## Screen Shots
-![alt text](image.png)
+
+## Database Setup Options
+- Use existing local MySQL schema (recommended for dev). Ensure these FKs have cascades:
+  - `carts.customer_id` → customers.customer_id ON DELETE CASCADE
+  - `cart_items.cart_id` → carts.cart_id ON DELETE CASCADE
+  - `excursion_cartitem.cart_item_id` → cart_items.cart_item_id ON DELETE CASCADE
+- Or initialize from SQL scripts:
+  - Copy a schema file into `demo/src/main/resources/database/schema.sql`
+  - In `application.properties` set:
+    ```properties
+    spring.jpa.hibernate.ddl-auto=none
+    spring.sql.init.mode=always
+    spring.sql.init.schema-locations=classpath:database/schema.sql
+    ```
+  - Restart the backend; Spring Boot will run the script
+
+
+
+# 💡 Why This Project?
+- Built full-stack CRUD with real-world patterns
+- Learned database cascade deletes, CORS, and deployment
+- Designed for easy recruiter review and demo
+
+
+
+## Developer Tips
+- Angular environment: `client/src/environments/environment.ts`
+- Proxy: `client/proxy.conf.json` (already wired in `angular.json` dev serve)
+- Data models/DTOs: `client/src/app/model` and `client/src/app/model/dto`
+- Purchase data service (cart state): `client/src/app/services/purchase-data.service.ts`
+- Controllers (backend): `demo/src/main/java/com/assessment/demo/controllers`
+- Entities (backend): `demo/src/main/java/com/assessment/demo/entities`
+
+
+
