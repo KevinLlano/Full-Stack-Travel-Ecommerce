@@ -30,30 +30,38 @@ public class Division {
     @UpdateTimestamp
     private Date last_update;
 
+    // Store the FK value directly so you can access/set it without loading Country
+    @Column(name = "country_id")
+    private long country_id;
+
+    // Relationship (read-only because we manage country_id ourselves)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "country_id", nullable = false, insertable = false, updatable = false)
     @JsonIgnore
     private Country country;
 
+    // Required by JPA
+    public Division() {
+    }
+
+    // Convenience constructor (optional)
     public Division(Long id, String division_name) {
         this.id = id;
         this.division_name = division_name;
     }
 
-    @Column(name = "country_id")
-    private long country_id;
     public void setCountry(Country country) {
-        setCountry_id(country.getId());
         this.country = country;
+        if (country != null) {
+            this.country_id = country.getId();
+        }
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         Division division = (Division) o;
-
         return Objects.equals(id, division.id);
     }
 

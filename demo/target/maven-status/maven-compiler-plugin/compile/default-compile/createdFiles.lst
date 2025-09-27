@@ -10,14 +10,12 @@ com\assessment\demo\entities\CartItem.class
 com\assessment\demo\entities\StatusType.class
 com\assessment\demo\entities\Country.class
 com\assessment\demo\dao\ExcursionRepository.class
-com\assessment\demo\services\Purchase.class
 com\assessment\demo\dao\CartRepository.class
 com\assessment\demo\DemoApplication.class
 com\assessment\demo\services\CheckoutServiceImpl.class
 com\assessment\demo\entities\Vacation.class
 com\assessment\demo\dao\CountryRepository.class
 com\assessment\demo\entities\Customer.class
-com\assessment\demo\services\PurchaseResponse.class
 com\assessment\demo\controllers\CustomerController.class
 com\assessment\demo\controllers\DivisionController.class
 com\assessment\demo\controllers\ExcursionController.class

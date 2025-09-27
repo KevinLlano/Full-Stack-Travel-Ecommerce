@@ -75,12 +75,26 @@ export class OrderConfirmationComponent implements OnInit {
 
   checkout() {
 
-    // convert data service object to plain old object for api call
-    let purchasePlain = Object.assign({}, this.purchaseServiceDto);
+    // Create simple purchase object with just IDs for backend lookup
+    const purchase = {
+      customerId: this.purchaseServiceDto.getCustomer().getId(),
+      cartId: this.purchaseServiceDto.getCart().getId()
+    };
+
+    console.log('Sending purchase data:', JSON.stringify(purchase, null, 2));
 
     // send request to back end
-    this.http.post<PurchaseApiResponse>(this.checkoutUrl, purchasePlain).subscribe(response => {
-      this.orderTrackingNumber = response.orderTrackingNumber;
+    this.http.post<PurchaseApiResponse>(this.checkoutUrl, purchase).subscribe({
+      next: (response) => {
+        console.log('Purchase successful:', response);
+        this.orderTrackingNumber = response.orderTrackingNumber;
+      },
+      error: (error) => {
+        console.error('Purchase failed:', error);
+        if (error.error && error.error.message) {
+          console.error('Error message:', error.error.message);
+        }
+      }
     });
 
   }

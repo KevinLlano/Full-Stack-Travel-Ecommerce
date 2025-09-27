@@ -7,10 +7,37 @@
     <list default="true" id="a0eb69f4-c689-4e0e-9bd7-9d22f8be0ec0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/CheckoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/CheckoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/CountryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/CountryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/DivisionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/DivisionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/VacationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/controllers/VacationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assessment/demo/entities/Division.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/Bootstrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/DemoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/DemoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/config/CorsConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/config/RestDataConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/config/RestDataConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CheckoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CheckoutController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CountryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CountryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController$CustomerDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController$CustomerDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController$DivisionDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController$DivisionDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/DivisionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/DivisionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/ExcursionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/ExcursionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/VacationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/controllers/VacationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/CartItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/CartItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/CartRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/CartRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/CountryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/CountryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/CustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/CustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/DivisionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/DivisionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/ExcursionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/ExcursionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/VacationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/dao/VacationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/CartItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/CartItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Division.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Division.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Excursion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Excursion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/StatusType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/StatusType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Vacation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/entities/Vacation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/services/CheckoutService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/services/CheckoutService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assessment/demo/services/CheckoutServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/assessment/demo/services/CheckoutServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/assessment/demo/DemoApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/assessment/demo/DemoApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +69,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DemoApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Projects/Personal Java Projects/travelapp/demo",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/Personal Java Projects/travelapp/demo&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.assessment.demo.DemoApplication" />
