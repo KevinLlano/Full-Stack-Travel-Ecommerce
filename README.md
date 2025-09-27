@@ -147,7 +147,9 @@ mvn test
 # 💡 Why This Project?
 - Built full-stack CRUD with real-world patterns
 - Learned database cascade deletes, CORS, and deployment
-- Designed for easy recruiter review and demo
+- Built an e-commerce replica that focused on a fun, travel-themed workflow.
+- Wanted to dive deeper into Angular integration with the backend.
+- Overall, it solves a problem, which I highly value.
 
 
 
