@@ -30,6 +30,7 @@
     "@angular/cli": "~14.2.12",
     "@angular/compiler-cli": "~14.2.12",
     "@angular/language-service": "~14.2.12",
+    "@flydotio/dockerfile": "^0.7.10",
     "@types/jasmine": "~4.0.0",
     "@types/node": "^18.15.13",
     "jasmine-core": "~4.3.0",

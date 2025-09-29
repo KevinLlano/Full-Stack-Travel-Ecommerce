@@ -1,4 +1,7 @@
-# Angular Travel System
+# Full-Stack Travel Ecommerce Shop
+
+## **Live Demo:**
+### [https://travelapp-damp-shape-6592.fly.dev/customer](https://travelapp-damp-shape-6592.fly.dev/customer)
 
 ## 🚀 Project Highlights
 - Modern travel booking app (Angular + Spring Boot)
@@ -14,7 +17,6 @@
 ![Docker](https://img.shields.io/badge/Docker-ready-blue?logo=docker)
 
 ## 📸 Screenshots
-<!-- Add your screenshots to the repo and update these paths -->
 ![alt text](image-1.png)
 
 Full-stack travel shopping app. The frontend (Angular) lets users browse vacations and excursions, manage a cart, and place orders. The backend (Spring Boot + MySQL) exposes REST APIs, persists data, and enforces referential integrity with cascading deletes.
@@ -160,6 +162,48 @@ mvn test
 - Purchase data service (cart state): `client/src/app/services/purchase-data.service.ts`
 - Controllers (backend): `demo/src/main/java/com/assessment/demo/controllers`
 - Entities (backend): `demo/src/main/java/com/assessment/demo/entities`
+
+
+# Deploying to Fly.io (PostgreSQL + Angular + Spring Boot)
+
+## 1. Prerequisites
+- Fly CLI installed: https://travelapp-damp-shape-6592.fly.dev/customer
+- Account logged in:
+```
+fly auth login
+```
+- PostgreSQL launch (managed) after app bootstrap.
+
+## 2. First-time init
+From repository root:
+```
+fly launch --no-deploy
+```
+When prompted:
+- Use existing Dockerfile: yes
+- Set app name (or keep generated)
+- Do NOT create a Postgres DB yet (we'll attach after confirming build) *or* allow wizard to create it; either works.
+
+
+
+# ---
+
+#  🚀 Deployment & Supabase Setup
+#
+This app is deployed on [Fly.io](https://fly.io/) and uses [Supabase](https://supabase.com/) for free PostgreSQL hosting.
+#
+# **Supabase Setup:**
+ - Create a new Supabase project and database.
+ - Run the provided SQL seed script to initialize schema and sample data.
+#- Copy your Supabase connection string, username, and password.
+
+# **Fly.io Deployment:**
+#- The backend and frontend are bundled together using a multi-stage Dockerfile.
+#- Environment variables for database connection (`SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`, `SPRING_DATASOURCE_PASSWORD`) are set in Fly.io secrets to connect to Supabase.
+
+
+# **Live Demo:**
+- [https://travelapp-damp-shape-6592.fly.dev/customer](https://travelapp-damp-shape-6592.fly.dev/customer)
 
 
 

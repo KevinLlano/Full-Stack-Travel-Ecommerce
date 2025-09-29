@@ -1,4 +1,5 @@
 com\assessment\demo\controllers\CheckoutController.class
+com\assessment\demo\dto\PurchaseResponse.class
 com\assessment\demo\dao\CustomerRepository.class
 com\assessment\demo\Bootstrap.class
 com\assessment\demo\controllers\CustomerController$CustomerDTO.class
@@ -10,9 +11,11 @@ com\assessment\demo\entities\CartItem.class
 com\assessment\demo\entities\StatusType.class
 com\assessment\demo\entities\Country.class
 com\assessment\demo\dao\ExcursionRepository.class
+com\assessment\demo\controllers\ApiResponseHelper.class
 com\assessment\demo\dao\CartRepository.class
 com\assessment\demo\DemoApplication.class
 com\assessment\demo\services\CheckoutServiceImpl.class
+com\assessment\demo\dto\Purchase.class
 com\assessment\demo\entities\Vacation.class
 com\assessment\demo\dao\CountryRepository.class
 com\assessment\demo\entities\Customer.class
