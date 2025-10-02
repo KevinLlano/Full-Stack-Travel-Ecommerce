@@ -1,7 +1,8 @@
 # Full-Stack Travel Ecommerce Shop
 
 ## **Live Demo:**
-### [https://travelapp-damp-shape-6592.fly.dev/customer](https://travelapp-damp-shape-6592.fly.dev/customer)
+TAKES 20 SECONDS TO LOAD BECAUSE IM ON FREE TIER. 
+### [https://travelapp-damp-shape-6592.fly.dev/customer](https://travelapp-damp-shape-6592.fly.dev/customer) 
 
 ## 🚀 Project Highlights
 - Modern travel booking app (Angular + Spring Boot)
