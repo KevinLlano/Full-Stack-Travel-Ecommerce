@@ -1,7 +1,7 @@
 # Full-Stack Travel Ecommerce Shop
 
 ## **Live Demo:**
-WEBSITE TAKES 20 SECONDS TO LOAD BECAUSE IM ON FREE TIER. 
+WEBSITE TAKES 20 SECONDS TO FULLY LOAD BECAUSE IM ON FREE TIER. I PLAN TO GO ON PAID PLAN SOON.
 ### [https://travelapp-damp-shape-6592.fly.dev/customer](https://travelapp-damp-shape-6592.fly.dev/customer) 
 
 ## 🚀 Project Highlights
