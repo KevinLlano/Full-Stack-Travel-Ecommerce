@@ -9,12 +9,17 @@
 - Responsive UI (Angular Material)
 - RESTful backend, MySQL database
 - Docker-ready for cloud deployment
+- Event-driven booking processing with AWS Lambda and SQS
+- Serverless architecture for scalable order handling
 
 ## 🛠️ Tech Stack
 ![Angular](https://img.shields.io/badge/Angular-14-red?logo=angular)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3-green?logo=springboot)
 ![MySQL](https://img.shields.io/badge/MySQL-8-blue?logo=mysql)
 ![Docker](https://img.shields.io/badge/Docker-ready-blue?logo=docker)
+![AWS Lambda](https://img.shields.io/badge/AWS%20Lambda-Python-orange?logo=awslambda)
+![Amazon SQS](https://img.shields.io/badge/Amazon%20SQS-Queue-red?logo=amazonsqs)
+![Terraform](https://img.shields.io/badge/Terraform-Infrastructure-blue?logo=terraform)
 
 ## 📸 Screenshots
 ![alt text](image-1.png)
@@ -26,6 +31,7 @@ Full-stack travel shopping app. The frontend (Angular) lets users browse vacatio
 - Backend: Spring Boot 3, Spring Data JPA, Spring Data REST, Bean Validation (Jakarta Validation)
 - Database: MySQL 8 (InnoDB), SQL schema + seed scripts
 - Build/Tooling: Maven, Node.js + npm, Angular CLI, TypeScript, Karma/Jasmine
+- Cloud/Serverless: AWS Lambda (Python 3.9), Amazon SQS, Terraform for Infrastructure as Code
 
 ## Project Structure
 - `client/` – Angular app (UI, services, models)
@@ -85,6 +91,13 @@ Key frontend details to replicate
 - Checkout flow posts a purchase to the backend
 - Proxy setup for local dev: Angular `/api` → Spring Boot on port 8080
 - Safe deletes: DB-level ON DELETE CASCADE from customers → carts → cart_items → excursion_cartitem
+
+## ☁️ AWS Integration
+- **AWS Lambda (Python)**: Serverless function for asynchronous booking order processing, including logging, alerts, and placeholders for email confirmations and analytics
+- **Amazon SQS**: Message queue for decoupling order placement from processing, enabling scalable event-driven architecture
+- **Terraform**: Infrastructure as Code for provisioning and managing AWS resources (SQS queue, Lambda function, IAM roles)
+- **Java SQS Service**: Added `SqsService` to Spring Boot backend for sending booking messages to SQS upon order completion
+- **Project Changes**: Updated `CheckoutController` to integrate SQS messaging, added AWS SDK dependency to `pom.xml`, created separate `aws-lambda/` directory with Terraform configuration and Python Lambda code
 
 ![alt text](image-3.png)
 

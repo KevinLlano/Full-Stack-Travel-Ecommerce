@@ -1,0 +1,31 @@
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# AWS credentials and sensitive files
+.aws/
+*.pem
+*.key
+credentials
+config
+terraform.tfvars
+*.tfvars
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Compiled output
+*.class
