@@ -92,7 +92,7 @@ Key frontend details to replicate
 - Proxy setup for local dev: Angular `/api` → Spring Boot on port 8080
 - Safe deletes: DB-level ON DELETE CASCADE from customers → carts → cart_items → excursion_cartitem
 
-## ☁️ AWS Integration
+## 🌩️ AWS Integration
 - **AWS Lambda (Python)**: Serverless function for asynchronous booking order processing, including logging, alerts, and placeholders for email confirmations and analytics
 - **Amazon SQS**: Message queue for decoupling order placement from processing, enabling scalable event-driven architecture
 - **Terraform**: Infrastructure as Code for provisioning and managing AWS resources (SQS queue, Lambda function, IAM roles)
